@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+說明文件:
+https://hackmd.io/s/B183d6iwG
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BABANANA Chat</title>
+
+    <meta name="theme-color" content="#41924B">
+    <link rel="shortcut icon" href="https://banana.eotones.net/favicon.ico" />
+
+    <link href="./css/style.css" media="all" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="announcements">
+      <div class="chat_title">&lt; BABANANA Chat &gt;</div>
+      <noscript>
+        本頁面必須開啟Javascript功能才可使用。<br>
+        說明文件請到: <a href="https://hackmd.io/s/B183d6iwG" rel="noopener noreferrer" target="_blank">https://hackmd.io/s/B183d6iwG</a>
+      </noscript>
+      <div id="c_script" style="display:none;">
+        這個頁面是金剛直播聊天室的"非官方"連線工具，<br>
+        本站和金剛直播(www.kingkong.com.tw)無任何關係。<br>
+        說明文件請到: <a href="https://hackmd.io/s/B183d6iwG" rel="noopener noreferrer" target="_blank">https://hackmd.io/s/B183d6iwG</a><br><br>
+        <div>
+          輸入你的實況台編號: <br>
+          <input id="inputChannel" type="text" placeholder="例如： 2426076" value="" />
+          <button id="btn_submit">送出</button>
+        </div>
+      </div>
+    </div>
+    <div id="output">
+
+    </div>
+
+    <div id="heat"></div>
+
+    <div id="scroll_to_bottom_btn">往下查看更多訊息。</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      var obs_mode = false;
+    </script>
+    <script type='text/javascript' src='banana.js'></script>
+
+  </body>
+</html>
