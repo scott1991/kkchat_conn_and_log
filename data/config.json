@@ -1,0 +1,3 @@
+{
+  "mongodbUri":"mongodb://<ACCT>:<PASSWORD>@atlas0-shard-00-00-celuz.mongodb.net:27017,atlas0-shard-00-01-celuz.mongodb.net:27017,atlas0-shard-00-02-celuz.mongodb.net:27017/kingkong?ssl=true&replicaSet=Atlas0-shard-0&authSource=admin"
+}
