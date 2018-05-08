@@ -50,6 +50,9 @@ async function prepareSocketConnInfo(){
   roomInfo = await infoTool.getRoomInfo(langID);
   is_live = roomInfo.data.live_status ;
   console.log("is_live",is_live);
+  // TODO: // upsert live_status , live_id, langID
+  // 每人的關台live_id 不同 msg/join 又沒有台主ID
+  // 所以必須有對照表
   let jwtPayload = setPayload(roomInfo.data.live_id) ;
   jwtToken = jwt.sign(jwtPayload, roomInfo.data.live_key, { algorithm: 'HS256', noTimestamp: true}) ;
 }
